@@ -30,7 +30,7 @@
             <a href="/dashboard" class="nav-link" style="color:#fff">
                 <i class="nav-icon fa fa-tachometer-alt"></i>
                 <p>
-                Dashboard
+                Home
                 </p>
             </a>
         </li>
