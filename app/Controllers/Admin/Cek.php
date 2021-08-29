@@ -146,6 +146,16 @@ class Cek extends BaseController
 			array_push($hasil1['hasil_rekom'], "<b>Menjadi Rekomendasi Pendonor Tetap</b>");
 		}
 
+		$data_save = array(
+			"jk" => $data['jk'],
+			"umur" => $data['umur'],
+			"job" => $data['job'],
+			"status" => $data['status'],
+			"keputusan" => $hasil1['hasil_rekom'][0]
+		);
+		
+		$this->crud->save_data("tb_cek_potensi", $data_save);
+
 		echo json_encode($hasil1);
 	}
 }
