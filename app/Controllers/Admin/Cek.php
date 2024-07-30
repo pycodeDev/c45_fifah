@@ -7,6 +7,7 @@ use App\Models\CrudModel;
 
 class Cek extends BaseController
 {
+	protected $crud;
 
 	public function __construct()
 	{

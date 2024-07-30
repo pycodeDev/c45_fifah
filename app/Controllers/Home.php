@@ -7,6 +7,8 @@ use App\Models\UserModel;
 class Home extends BaseController
 {
 
+	protected $auth;
+
 	public function __construct()
 	{
 		$this->auth = new UserModel();

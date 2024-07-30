@@ -9,7 +9,7 @@ use App\Models\CrudModel;
 
 class Data extends BaseController
 {
-
+	protected $crud;
 	public function __construct()
 	{
 		$this->crud = new CrudModel();
